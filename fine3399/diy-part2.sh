@@ -17,8 +17,8 @@ echo -e "\\ndefine Device/rumu3f_fine3399
   UBOOT_DEVICE_NAME := fine3399-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
   DEVICE_PACKAGES := brcmfmac-firmware-43430b0-sdio brcmfmac-nvram-43430b0-sdio \
-	kmod-brcmfmac kmod-gpio-button-hotplug kmod-usb-net-rtl8152 wpad
-    kmod-tun kmod-inet-diag kmod-netlink-diag
+	kmod-brcmfmac kmod-gpio-button-hotplug kmod-usb-net-rtl8152 wpad \
+	kmod-tun kmod-inet-diag kmod-netlink-diag
 endef
 TARGET_DEVICES += rumu3f_fine3399" >> target/linux/rockchip/image/armv8.mk
 
